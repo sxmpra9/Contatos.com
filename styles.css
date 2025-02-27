@@ -1,0 +1,196 @@
+/* sxmpra */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+#title {
+    margin-bottom: 20px;
+}
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7b00, #ff0000);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.back-button:hover {
+    background-color: #5a6268;
+}
+.toggle-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7b00, #ff0000);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.toggle-button:hover {
+    background-color: #e0a800;
+}
+.audio-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7b00, #ff0000);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.audio-button:hover {
+    background-color: #218838;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+}
+header {
+  border-radius: 50px;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+    margin-top: -20px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 24px;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.menu-icon .close {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav#menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgba(5, 0, 0, 0.8);
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+nav#menu ul {
+  list-style: none;
+  text-align: center;
+}
+nav#menu ul li {
+  margin: 20px 0;
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+nav#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+.menu-open #menu {
+  right: 0;
+}
+.menu-open .menu-icon .bar {
+  opacity: 0;
+}
+.menu-open .menu-icon .close {
+  display: block;
+}
+section {
+  padding: 80px 20px;
+  margin-top: 60px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.3s;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    box-shadow: 0px 5px 15px rgba(25, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ff7b00, #ff0000);
+    width: 250px;
+    justify-content: center;
+}
+.contact-link i {
+    font-size: 22px;
+}
+.contact-link.email {
+    background: linear-gradient(45deg, #ff4d4d, #ff0000);
+}
+.contact-link.instagram {
+    background: linear-gradient(45deg, #E1306C, #C13584);
+}
+.contact-link.whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+.contact-link:hover {
+    transform: scale(1.1);
+}
+.contact-link:active {
+    transform: scale(0.95);
+}
