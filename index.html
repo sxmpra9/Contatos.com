@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos sxmpra</title>
+      <link rel="icon" href="img/Uiui.jpg" type="logo">
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="containerr">
+      <h1>SXMPRA</h1>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="close">&times;</div>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="https://sxmpra9.github.io/Realsxmpra.com.net/" onclick="toggleMenu()">Home</a></li>
+          <li><a href="https://sxmpra9.github.io/Botsxmpra.com/" onclick="toggleMenu()">Cursos</a></li>
+          <li><a href="https://sxmpra9.github.io/Servisos.com/" onclick="toggleMenu()">serviços</a></li>
+          <li><a href="https://sxmpra9.github.io/SxmpraIP.com/" onclick="toggleMenu()">Sxmpra IP</a></li>
+          <li><a href="https://sxmpra9.github.io/Botsxmpra.com/" onclick="toggleMenu()">Sxmpra IA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <video autoplay muted loop id="video-background">
+      <source src="img/Cs.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+  </video>
+  <div class="container">
+      <h1 id="title">Meus Contatos</h1>
+      <div id="contacts" class="contacts">
+          <a href="realsxmpra@gmail.com" class="contact-link email">
+              <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="https://www.instagram.com/realsxmpra" class="contact-link instagram">
+              <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://wa.me/5511975748697" class="contact-link whatsapp">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+      </div>
+      <button onclick="goBack()" class="back-button">Voltar</button>
+      <button onclick="toggleVisibility()" class="toggle-button">Esconder Tudo</button>
+      <button onclick="enableAudio()" class="audio-button">Ativar Áudio</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
